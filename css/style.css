@@ -1,0 +1,50 @@
+div{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin:250px auto;
+    width: 200px;
+}
+
+.find-icon {
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    top:0px;
+}
+
+.search {
+    font-size: 30px;
+    width: 100%;
+    border:none;
+}
+
+.delete {
+    animation-name: change;
+    animation-duration: 5s;
+}
+.deletediv{
+    animation-name: changeOpacity;
+    animation-duration: 5s;
+}
+
+@keyframes change {
+    0% { 
+        width:40px;
+    }
+    100% {
+        width:0px;
+    }
+}
+
+@keyframes changeOpacity{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
